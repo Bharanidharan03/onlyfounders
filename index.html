@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VECTOR | Skill Identity & Guidance</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="logo">VECTOR <div class="logo-accent"></div>
+            </div>
+            <div class="user-profile">
+                <span id="user-name-display">Guest</span>
+                <div class="avatar-circle"></div>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main>
+            <!-- Hero / Welcome Section -->
+            <section id="hero" class="active-section">
+                <div class="hero-content">
+                    <h1>Discover Your <span class="gradient-text">Vector</span>.</h1>
+                    <p>The unified platform for Skill Identity, Verification, and AI-Driven Guidance.</p>
+                    <button class="btn-primary" onclick="showSection('profiler')">Start Assessment</button>
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <span class="stat-val">Verified</span>
+                            <span class="stat-label">Identity</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-val">AI</span>
+                            <span class="stat-label">Guidance</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Profiler Form (Data Collection) -->
+            <section id="profiler" class="hidden-section">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2>Build Your Profile</h2>
+                        <p>Tell us about you so we can calculate your Vector.</p>
+                    </div>
+
+                    <form id="skill-form" onsubmit="handleProfileSubmit(event)">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" id="inp-name" placeholder="e.g. Alex Doe" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Academic Class</label>
+                                <select id="inp-class">
+                                    <option value="8">8th Grade</option>
+                                    <option value="9">9th Grade</option>
+                                    <option value="10">10th Grade</option>
+                                    <option value="11">11th Grade</option>
+                                    <option value="12">12th Grade</option>
+                                    <option value="College">College</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Target Stream/Major</label>
+                                <input type="text" id="inp-stream" placeholder="e.g. Science, CS, Commerce">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Core Interests (Select all that apply)</label>
+                            <div class="chips-container" id="interest-chips">
+                                <div class="chip" onclick="toggleInterest(this, 'Mathematics')">Mathematics</div>
+                                <div class="chip" onclick="toggleInterest(this, 'Physics')">Physics</div>
+                                <div class="chip" onclick="toggleInterest(this, 'AI & ML')">AI & Machine Learning</div>
+                                <div class="chip" onclick="toggleInterest(this, 'Robotics')">Robotics</div>
+                                <div class="chip" onclick="toggleInterest(this, 'Biology & Medicine')">Biology &
+                                    Medicine</div>
+                                <div class="chip" onclick="toggleInterest(this, 'Investment / Finance')">Finance &
+                                    Trading</div>
+                                <div class="chip" onclick="toggleInterest(this, 'Sports & Athletics')">Sports &
+                                    Athletics</div>
+                                <div class="chip" onclick="toggleInterest(this, 'Public Speaking & Leadership')">Debate
+                                    & Leadership</div>
+                                <div class="chip" onclick="toggleInterest(this, 'Academics & Research')">Academics &
+                                    Research</div>
+                                <div class="chip" onclick="toggleInterest(this, 'Innovation & Strategy')">Innovation &
+                                    Strategy</div>
+                                <div class="chip" onclick="toggleInterest(this, 'Editing & Media Production')">Editing &
+                                    Media</div>
+                                <div class="chip" onclick="toggleInterest(this, 'Blockchain / Web3')">Blockchain / Web3
+                                </div>
+                                <div class="chip" onclick="toggleInterest(this, 'Literature & Writing')">Literature
+                                </div>
+                                <div class="chip" onclick="toggleInterest(this, 'Design')">Design</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Notable Talents / Achievements</label>
+                            <textarea id="inp-talents"
+                                placeholder="e.g. I solved 50 Project Euler problems, I realized I love calculus..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary full-width">Analyze My Vector &rarr;</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Guidance Dashboard (Results) -->
+            <section id="dashboard" class="hidden-section">
+                <div class="dashboard-grid">
+                    <!-- Identity Card -->
+                    <div class="card identity-card">
+                        <h3>Vector Passport</h3>
+                        <div class="score-display">
+                            <div class="score-circle">
+                                <span id="score-val">0</span>
+                                <span class="score-label">Skill Score</span>
+                            </div>
+                            <div class="score-details">
+                                <div class="detail-row">
+                                    <span>Focus</span>
+                                    <strong id="res-focus">Undetermined</strong>
+                                </div>
+                                <div class="detail-row">
+                                    <span>Status</span>
+                                    <strong class="status-verified">Verified</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Guidance Feed -->
+                    <div class="card guidance-card">
+                        <h3>AI Opportunity Radar</h3>
+                        <p class="subtitle">Curated paths based on your profile.</p>
+
+                        <div id="recommendation-list" class="rec-list">
+                            <!-- JS will inject items here -->
+                        </div>
+                    </div>
+
+                    <!-- Quiz / Earn Card -->
+                    <div class="card quiz-entry-card" style="border-color: #ffd700;">
+                        <h3>Earn Tokens</h3>
+                        <p>Verify your skills to earn currency.</p>
+                        <div class="token-balance-display" style="margin: 15px 0;">
+                            <span>Balance:</span>
+                            <strong id="dash-token-val" style="color:var(--accent); font-size:1.4rem;">0 🪙</strong>
+                        </div>
+                        <button class="btn-primary full-width" onclick="startQuiz()"
+                            style="background: rgba(255, 215, 0, 0.1); color: #ffd700; border: 1px solid #ffd700;">Start
+                            Challenge</button>
+                    </div>
+
+                    <!-- Global Leaderboard (New) -->
+                    <div class="card leaderboard-card" style="grid-column: span 1;">
+                        <h3>🏆 Top Vectors</h3>
+                        <div id="dashboard-leaderboard" class="mini-leaderboard">
+                            <!-- JS Injects here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+                    <!-- Notes Link (Context Aware) -->
+                    <div class="card notes-card">
+                        <h3>Academic Sync</h3>
+                        <p>Based on <span id="sync-class">Class 10</span>:</p>
+                        <div class="resource-link">
+                            <div class="icon">📚</div>
+                            <div class="info">
+                                <h4>Structured Notes</h4>
+                                <p>Access curated materials for your stream.</p>
+                            </div>
+                            <button class="btn-sm">Open</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-secondary" onclick="showSection('hero')">Back to Home</button>
+            </section>
+
+            <!-- Event Details Section (New) -->
+            <section id="event-details-section" class="hidden-section">
+                <button class="btn-secondary" onclick="showSection('dashboard')" style="margin-bottom:20px;">&larr; Back
+                    to Dashboard</button>
+                <div class="card detail-view-card">
+                    <div class="detail-header">
+                        <span id="evt-type" class="tag-badge">COMPETITION</span>
+                        <h2 id="evt-title">Event Title</h2>
+                    </div>
+
+                    <div class="detail-body">
+                        <p id="evt-desc" class="evt-description">Description goes here...</p>
+
+                        <div class="rec-meta-grid">
+                            <div class="meta-box">
+                                <span class="lbl">Difficulty</span>
+                                <strong id="evt-diff" class="val">Hard</strong>
+                            </div>
+                            <div class="meta-box">
+                                <span class="lbl">Time</span>
+                                <strong id="evt-time" class="val">2 Weeks</strong>
+                            </div>
+                            <div class="meta-box">
+                                <span class="lbl">Impact</span>
+                                <strong id="evt-impact" class="val">High</strong>
+                            </div>
+                        </div>
+
+                        <div class="rec-why" id="evt-why"
+                            style="margin:20px 0; padding:15px; background:rgba(255,255,255,0.05); border-radius:8px;">
+                            Why logic...
+                        </div>
+                    </div>
+
+                    <div class="detail-actions">
+                        <div class="price-display">
+                            <span>Entry Fee:</span>
+                            <strong style="color:var(--accent); font-size:1.2rem;">50 Tokens</strong>
+                        </div>
+                        <button id="btn-evt-register" class="btn-primary full-width"
+                            onclick="openPaymentModal()">Register Now</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Study Hub Section -->
+            <section id="study-hub-section" class="hidden-section">
+                <button class="btn-secondary" onclick="showSection('dashboard')" style="margin-bottom:20px;">&larr; Back
+                    to Dashboard</button>
+                <div id="study-hub-content" class="card detail-view-card">
+                    <!-- Dynamic Content -->
+                </div>
+            </section>
+
+            <!-- Quiz Section -->
+            <section id="quiz-section" class="hidden-section">
+                <div class="quiz-layout">
+                    <h2>Thinking Level Assessment</h2>
+                    <p style="text-align:center; color:var(--text-muted); margin-bottom:30px;">Answer 10 questions to
+                        earn tokens and verify your logic.</p>
+                    <div id="quiz-container">
+                        <!-- JS Injects here -->
+                    </div>
+                </div>
+            </section>
+            <!-- Payment Modal -->
+            <div id="payment-modal" class="modal-overlay hidden-modal">
+                <div class="modal-card">
+                    <div class="modal-header-row">
+                        <span class="modal-badge">Premium Access</span>
+                        <div class="user-balance-pill">
+                            <span>Balance:</span>
+                            <span id="modal-balance" style="color:var(--accent); font-weight:700;">0 Tokens</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-icon">💎</div>
+                    <h3 id="modal-title">Confirm Registration</h3>
+                    <p id="modal-desc">Secure your spot in this exclusive opportunity.</p>
+
+                    <div class="price-tag">
+                        <span class="label">Total Cost</span>
+                        <div class="amount">
+                            <span>50</span>
+                            <span class="currency">Tokens</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-actions">
+                        <button class="btn-secondary" onclick="closeModal()">Cancel</button>
+                        <button class="btn-primary" id="btn-pay" onclick="confirmPayment()">Confirm & Pay</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
