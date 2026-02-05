@@ -1,0 +1,13 @@
+2026-02-05 15:41:25,874 WARNING:  * Debugger is active! [in C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py:97]
+2026-02-05 15:41:25,878 INFO:  * Debugger PIN: 998-104-148 [in C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py:97]
+2026-02-05 15:41:33,334 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.44.186:5000 [in C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py:97]
+2026-02-05 15:41:33,334 INFO: [33mPress CTRL+C to quit[0m [in C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py:97]
+2026-02-05 15:41:33,337 INFO:  * Restarting with stat [in C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py:97]
+2026-02-05 15:41:35,372 WARNING:  * Debugger is active! [in C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py:97]
+2026-02-05 15:41:35,377 INFO:  * Debugger PIN: 998-104-148 [in C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py:97]
+2026-02-05 15:45:56,053 INFO: 127.0.0.1 - - [05/Feb/2026 15:45:56] "[35m[1mPOST /live-voice HTTP/1.1[0m" 500 - [in C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py:97]
+2026-02-05 15:47:08,166 INFO:  * Detected change in 'D:\\only_founder_1\\app.py', reloading [in C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py:97]
+2026-02-05 15:47:08,403 INFO:  * Restarting with stat [in C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\_internal.py:97]

@@ -1,0 +1,8 @@
+flask
+flask-cors
+speechrecognition
+pydub
+pillow
+PyPDF2
+pytesseract
+pyaudio

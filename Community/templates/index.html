@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Format to JSON Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">
+                    <span class="icon">🔄</span>
+                    Multi-Format to JSON Converter
+                </h1>
+                <p class="subtitle">Transform audio, documents, images, and voice into structured JSON data</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Input Section -->
+            <section class="input-section">
+                <div class="section-header">
+                    <h2>📥 Input Source</h2>
+                    <p>Choose your input method below</p>
+                </div>
+
+                <!-- Tab Navigation -->
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="upload">
+                        📁 Upload File
+                    </button>
+                    <button class="tab-btn" data-tab="voice">
+                        🎤 Live Voice
+                    </button>
+                    <button class="tab-btn" data-tab="text">
+                        ✍️ Text Input
+                    </button>
+                </div>
+
+                <!-- Upload Tab -->
+                <div class="tab-content active" id="upload-tab">
+                    <div class="upload-zone" id="uploadZone">
+                        <input type="file" id="fileInput" accept=".mp3,.wav,.m4a,.flac,.pdf,.jpg,.jpeg,.png,.bmp"
+                            hidden>
+                        <div class="upload-content">
+                            <div class="upload-icon">📎</div>
+                            <h3>Drag & Drop Files Here</h3>
+                            <p>or click to browse</p>
+                            <div class="supported-formats">
+                                <span>MP3</span>
+                                <span>PDF</span>
+                                <span>JPG</span>
+                                <span>PNG</span>
+                                <span>WAV</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="uploadStatus" class="status-message"></div>
+                </div>
+
+                <!-- Voice Tab -->
+                <div class="tab-content" id="voice-tab">
+                    <div class="voice-recorder">
+                        <div class="voice-visualizer" id="voiceVisualizer">
+                            <div class="pulse-ring"></div>
+                            <div class="mic-icon">🎤</div>
+                        </div>
+                        <button class="record-btn" id="recordBtn">
+                            <span class="btn-text">Start Recording</span>
+                        </button>
+                        <p class="voice-instruction">Click to start recording your voice</p>
+                    </div>
+                    <div id="voiceStatus" class="status-message"></div>
+                </div>
+
+                <!-- Text Tab -->
+                <div class="tab-content" id="text-tab">
+                    <div class="text-input-container">
+                        <textarea id="textInput" placeholder="Type or paste your text here..."></textarea>
+                        <button class="submit-btn" id="submitTextBtn">
+                            <span class="btn-text">Convert to JSON</span>
+                        </button>
+                    </div>
+                    <div id="textStatus" class="status-message"></div>
+                </div>
+            </section>
+
+            <!-- Output Section -->
+            <section class="output-section" id="outputSection" style="display: none;">
+                <div class="section-header">
+                    <h2>📤 JSON Output</h2>
+                    <div class="output-actions">
+                        <button class="action-btn" id="copyBtn">
+                            📋 Copy
+                        </button>
+                        <button class="action-btn" id="downloadBtn">
+                            💾 Download
+                        </button>
+                    </div>
+                </div>
+                <div class="json-display">
+                    <pre id="jsonOutput"></pre>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Powered by AI Speech Recognition & OCR</p>
+        </footer>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loader">
+            <div class="spinner"></div>
+            <p>Processing...</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+
+</html>
