@@ -1,0 +1,49 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Standard {
+  id      String   @id @default(uuid())
+  name    String   // e.g., "Class 10"
+  domains Domain[]
+  subjects Subject[]
+}
+
+model Domain {
+  id         String   @id @default(uuid())
+  name       String   // e.g., "Computer Science Group"
+  standard   Standard @relation(fields: [standardId], references: [id])
+  standardId String
+  subjects   Subject[]
+}
+
+model Subject {
+  id         String   @id @default(uuid())
+  name       String   // e.g., "Physics"
+  standard   Standard @relation(fields: [standardId], references: [id])
+  standardId String
+  domain     Domain?  @relation(fields: [domainId], references: [id])
+  domainId   String?
+  chapters   Chapter[]
+}
+
+model Chapter {
+  id        String  @id @default(uuid())
+  title     String
+  order     Int
+  subject   Subject @relation(fields: [subjectId], references: [id])
+  subjectId String
+  notes     Note?
+}
+
+model Note {
+  id        String  @id @default(uuid())
+  content   String  // Markdown content
+  chapter   Chapter @relation(fields: [chapterId], references: [id])
+  chapterId String  @unique
+}
