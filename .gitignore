@@ -26,3 +26,4 @@ vector_db/
 .gemini/
 server/venv/
 venv/
+.vercel
