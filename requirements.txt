@@ -1,0 +1,14 @@
+fastapi
+sqlalchemy
+pydantic
+python-multipart
+uvicorn
+google-generativeai
+chromadb
+PyMuPDF
+pytesseract
+Pillow
+pydub
+openai-whisper
+werkzeug
+mangum
