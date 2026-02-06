@@ -1,16 +1,81 @@
-# React + Vite
+# VECTOR AI Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A futuristic AI-powered educational platform combining Web3 authentication, skill verification, and personalized career guidance.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **3D Holographic Landing Page** - Cyberpunk-inspired UI with rotating data cube
+- **AI Career Guidance** - Gemini 2.5 Flash powered department and role suggestions
+- **Real-time Hackathon Discovery** - Google Search grounding for live opportunities
+- **Multi-format Learning Converter** - Audio, PDF, and image to structured notes
+- **AI-Generated Quizzes** - Automatic assessment creation from learning content
+- **Skill Verification System** - AI-audited proof-of-skill authentication
+- **Web3 Wallet Integration** - MetaMask authentication
+- **Learning Diary** - Track and analyze your educational journey
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
+- React + Vite
+- Framer Motion (animations)
+- Glassmorphism UI design
+- CSS3 with 3D transforms
 
-## Expanding the ESLint configuration
+### Backend
+- FastAPI (Python)
+- SQLAlchemy ORM
+- Google Gemini AI (2.5 Flash)
+- Whisper (audio transcription)
+- Tesseract OCR (image processing)
+- PyMuPDF (PDF parsing)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Installation
+
+### Prerequisites
+- Node.js 18+
+- Python 3.11+
+- FFmpeg (for audio processing)
+
+### Frontend Setup
+```bash
+npm install
+npm run dev
+```
+
+### Backend Setup
+```bash
+cd server
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python main.py
+```
+
+## 🔑 Environment Variables
+
+Create a `.env` file in the server directory:
+```
+GEMINI_API_KEY=your_gemini_api_key_here
+```
+
+## 🎨 UI Highlights
+
+- **Neon Gradients** - Cyan/purple color scheme
+- **3D Animations** - Rotating tesseract, floating elements
+- **Glass Morphism** - Frosted glass cards with backdrop blur
+- **Responsive Design** - Mobile-first approach
+
+## 🤖 AI Features
+
+1. **Department Suggestion** - Analyzes learning patterns to recommend academic streams
+2. **Role Prediction** - Extrapolates career paths from current skills
+3. **Opportunity Matching** - Real-time hackathon and competition discovery
+4. **Content Analysis** - Automatic topic extraction and quiz generation
+
+## 📝 License
+
+MIT License - See LICENSE file for details
+
+## 👥 Contributors
+
+Built with ❤️ by the VECTOR team

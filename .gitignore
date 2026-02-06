@@ -24,3 +24,5 @@ vector_db/
 *.sqlite
 *.sqlite3
 .gemini/
+server/venv/
+venv/
