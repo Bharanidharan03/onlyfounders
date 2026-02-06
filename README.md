@@ -1,5 +1,11 @@
 # VECTOR AI Platform
 
+
+LIVE DEMO:https://vector-ai-platform-gamma.vercel.app/
+
+
+
+
 A futuristic AI-powered educational platform combining Web3 authentication, skill verification, and personalized career guidance.
 
 ## 🚀 Features
