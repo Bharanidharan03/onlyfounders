@@ -1,0 +1,461 @@
+2026-02-05 15:49:35,750 WARNING:  * Debugger is active!
+2026-02-05 15:49:35,750 INFO:  * Debugger PIN: 998-104-148
+2026-02-05 15:49:42,147 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.44.186:5000
+2026-02-05 15:49:42,148 INFO: [33mPress CTRL+C to quit[0m
+2026-02-05 15:49:42,150 INFO:  * Restarting with stat
+2026-02-05 15:49:43,877 WARNING:  * Debugger is active!
+2026-02-05 15:49:43,884 INFO:  * Debugger PIN: 998-104-148
+2026-02-05 15:53:46,616 INFO:  * Detected change in 'D:\\only_founder_1\\app.py', reloading
+2026-02-05 15:53:46,892 INFO:  * Restarting with stat
+2026-02-05 15:53:48,622 WARNING:  * Debugger is active!
+2026-02-05 15:53:48,627 INFO:  * Debugger PIN: 998-104-148
+2026-02-05 15:53:56,377 INFO:  * Detected change in 'D:\\only_founder_1\\app.py', reloading
+2026-02-05 15:53:56,667 INFO:  * Restarting with stat
+2026-02-05 15:54:02,427 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.44.186:5000
+2026-02-05 15:54:02,427 INFO: [33mPress CTRL+C to quit[0m
+2026-02-05 15:54:02,432 INFO:  * Restarting with stat
+2026-02-05 15:54:04,433 WARNING:  * Debugger is active!
+2026-02-05 15:54:04,438 INFO:  * Debugger PIN: 998-104-148
+2026-02-05 16:00:15,276 INFO: 127.0.0.1 - - [05/Feb/2026 16:00:15] "[31m[1mPOST /live-voice HTTP/1.1[0m" 400 -
+2026-02-05 16:00:24,908 INFO: 127.0.0.1 - - [05/Feb/2026 16:00:24] "[31m[1mPOST /live-voice HTTP/1.1[0m" 400 -
+2026-02-05 16:00:32,939 INFO: 127.0.0.1 - - [05/Feb/2026 16:00:32] "[31m[1mPOST /live-voice HTTP/1.1[0m" 400 -
+2026-02-05 16:07:14,881 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.44.186:5000
+2026-02-05 16:07:14,881 INFO: [33mPress CTRL+C to quit[0m
+2026-02-05 16:07:14,881 INFO:  * Restarting with stat
+2026-02-05 16:07:16,326 WARNING:  * Debugger is active!
+2026-02-05 16:07:16,331 INFO:  * Debugger PIN: 998-104-148
+2026-02-05 16:17:01,789 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.44.186:5000
+2026-02-05 16:17:01,789 INFO: [33mPress CTRL+C to quit[0m
+2026-02-05 16:17:01,792 INFO:  * Restarting with stat
+2026-02-05 16:17:02,810 WARNING:  * Debugger is active!
+2026-02-05 16:17:02,814 INFO:  * Debugger PIN: 998-104-148
+2026-02-05 16:17:20,574 INFO: 127.0.0.1 - - [05/Feb/2026 16:17:20] "GET / HTTP/1.1" 200 -
+2026-02-05 16:17:20,944 INFO: 127.0.0.1 - - [05/Feb/2026 16:17:20] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-02-05 16:17:21,019 INFO: 127.0.0.1 - - [05/Feb/2026 16:17:21] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-02-05 16:17:21,242 ERROR: An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2026-02-05 16:17:21,243 INFO: 127.0.0.1 - - [05/Feb/2026 16:17:21] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2026-02-05 16:17:30,212 INFO: 127.0.0.1 - - [05/Feb/2026 16:17:30] "[31m[1mPOST /live-voice HTTP/1.1[0m" 400 -
+2026-02-05 16:30:32,410 INFO:  * Detected change in 'd:\\only_founder_1\\multi_format_to_json.py', reloading
+2026-02-05 16:30:32,621 INFO:  * Restarting with stat
+2026-02-05 16:30:34,093 WARNING:  * Debugger is active!
+2026-02-05 16:30:34,097 INFO:  * Debugger PIN: 998-104-148
+2026-02-05 16:30:40,648 INFO:  * Detected change in 'd:\\only_founder_1\\app.py', reloading
+2026-02-05 16:30:40,800 INFO:  * Restarting with stat
+2026-02-05 16:30:42,026 WARNING:  * Debugger is active!
+2026-02-05 16:30:42,030 INFO:  * Debugger PIN: 998-104-148
+2026-02-05 16:30:51,545 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.44.186:5000
+2026-02-05 16:30:51,545 INFO: [33mPress CTRL+C to quit[0m
+2026-02-05 16:30:51,547 INFO:  * Restarting with stat
+2026-02-05 16:30:52,801 WARNING:  * Debugger is active!
+2026-02-05 16:30:52,805 INFO:  * Debugger PIN: 998-104-148
+2026-02-05 16:31:28,545 INFO: 127.0.0.1 - - [05/Feb/2026 16:31:28] "GET /health HTTP/1.1" 200 -
+2026-02-05 16:31:32,877 INFO: 127.0.0.1 - - [05/Feb/2026 16:31:32] "POST /text-input HTTP/1.1" 200 -
+2026-02-05 16:32:18,307 INFO:  * Detected change in 'd:\\only_founder_1\\app.py', reloading
+2026-02-05 16:32:18,467 INFO:  * Restarting with stat
+2026-02-05 16:32:19,942 WARNING:  * Debugger is active!
+2026-02-05 16:32:19,945 INFO:  * Debugger PIN: 998-104-148
+2026-02-05 16:52:55,158 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.44.186:5000
+2026-02-05 16:52:55,158 INFO: [33mPress CTRL+C to quit[0m
+2026-02-05 16:52:55,158 INFO:  * Restarting with stat
+2026-02-05 16:52:56,631 WARNING:  * Debugger is active!
+2026-02-05 16:52:56,634 INFO:  * Debugger PIN: 998-104-148
+2026-02-05 16:53:02,407 INFO: 127.0.0.1 - - [05/Feb/2026 16:53:02] "GET / HTTP/1.1" 200 -
+2026-02-05 16:53:02,473 ERROR: An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2026-02-05 16:53:02,478 INFO: 127.0.0.1 - - [05/Feb/2026 16:53:02] "[35m[1mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 500 -
+2026-02-05 16:53:02,868 INFO: 127.0.0.1 - - [05/Feb/2026 16:53:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 16:53:02,982 INFO: 127.0.0.1 - - [05/Feb/2026 16:53:02] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-02-05 16:53:03,397 ERROR: An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2026-02-05 16:53:03,399 INFO: 127.0.0.1 - - [05/Feb/2026 16:53:03] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2026-02-05 16:53:13,724 INFO: 127.0.0.1 - - [05/Feb/2026 16:53:13] "POST /live-voice HTTP/1.1" 200 -
+2026-02-05 16:53:29,200 INFO: 127.0.0.1 - - [05/Feb/2026 16:53:29] "GET / HTTP/1.1" 200 -
+2026-02-05 16:53:29,534 INFO: 127.0.0.1 - - [05/Feb/2026 16:53:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 16:53:29,535 INFO: 127.0.0.1 - - [05/Feb/2026 16:53:29] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-02-05 16:53:29,547 ERROR: An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2026-02-05 16:53:29,547 INFO: 127.0.0.1 - - [05/Feb/2026 16:53:29] "[35m[1mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 500 -
+2026-02-05 16:53:29,800 ERROR: An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2026-02-05 16:53:29,800 INFO: 127.0.0.1 - - [05/Feb/2026 16:53:29] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2026-02-05 16:53:30,654 INFO: 127.0.0.1 - - [05/Feb/2026 16:53:30] "POST /live-voice HTTP/1.1" 200 -
+2026-02-05 16:53:42,089 INFO: 127.0.0.1 - - [05/Feb/2026 16:53:42] "POST /live-voice HTTP/1.1" 200 -
+2026-02-05 16:54:38,003 INFO: 127.0.0.1 - - [05/Feb/2026 16:54:38] "POST /live-voice HTTP/1.1" 200 -
+2026-02-05 16:56:54,261 INFO:  * Detected change in 'd:\\only_founder_1\\multi_format_to_json.py', reloading
+2026-02-05 16:56:54,559 INFO:  * Restarting with stat
+2026-02-05 16:56:56,433 WARNING:  * Debugger is active!
+2026-02-05 16:56:56,439 INFO:  * Debugger PIN: 998-104-148
+2026-02-05 16:57:37,162 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.16.44.186:8000
+2026-02-05 16:57:37,162 INFO: [33mPress CTRL+C to quit[0m
+2026-02-05 16:57:37,162 INFO:  * Restarting with stat
+2026-02-05 16:57:38,743 WARNING:  * Debugger is active!
+2026-02-05 16:57:38,749 INFO:  * Debugger PIN: 998-104-148
+2026-02-05 16:58:08,889 INFO: 127.0.0.1 - - [05/Feb/2026 16:58:08] "GET / HTTP/1.1" 200 -
+2026-02-05 16:58:08,897 INFO: 127.0.0.1 - - [05/Feb/2026 16:58:08] "GET / HTTP/1.1" 200 -
+2026-02-05 16:58:09,440 INFO: 127.0.0.1 - - [05/Feb/2026 16:58:09] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-02-05 16:58:09,579 INFO: 127.0.0.1 - - [05/Feb/2026 16:58:09] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-02-05 16:58:09,758 INFO: 127.0.0.1 - - [05/Feb/2026 16:58:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 16:58:09,913 INFO: 127.0.0.1 - - [05/Feb/2026 16:58:09] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-02-05 16:58:10,006 ERROR: An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2026-02-05 16:58:10,006 INFO: 127.0.0.1 - - [05/Feb/2026 16:58:10] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2026-02-05 16:58:10,324 ERROR: An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2026-02-05 16:58:10,328 INFO: 127.0.0.1 - - [05/Feb/2026 16:58:10] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2026-02-05 16:58:24,765 INFO: 127.0.0.1 - - [05/Feb/2026 16:58:24] "GET / HTTP/1.1" 200 -
+2026-02-05 16:58:25,110 INFO: 127.0.0.1 - - [05/Feb/2026 16:58:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 16:58:25,110 INFO: 127.0.0.1 - - [05/Feb/2026 16:58:25] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-02-05 16:58:25,353 ERROR: An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2026-02-05 16:58:25,354 INFO: 127.0.0.1 - - [05/Feb/2026 16:58:25] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2026-02-05 16:58:29,828 INFO: 127.0.0.1 - - [05/Feb/2026 16:58:29] "POST /live-voice HTTP/1.1" 200 -
+2026-02-05 16:58:33,833 INFO: 127.0.0.1 - - [05/Feb/2026 16:58:33] "POST /live-voice HTTP/1.1" 200 -
+2026-02-05 16:58:38,387 INFO: 127.0.0.1 - - [05/Feb/2026 16:58:38] "GET / HTTP/1.1" 200 -
+2026-02-05 16:58:38,436 INFO: 127.0.0.1 - - [05/Feb/2026 16:58:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 16:58:38,643 INFO: 127.0.0.1 - - [05/Feb/2026 16:58:38] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-02-05 16:58:38,976 ERROR: An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2026-02-05 16:58:38,976 INFO: 127.0.0.1 - - [05/Feb/2026 16:58:38] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2026-02-05 16:59:16,151 INFO: 127.0.0.1 - - [05/Feb/2026 16:59:16] "GET / HTTP/1.1" 200 -
+2026-02-05 16:59:16,458 INFO: 127.0.0.1 - - [05/Feb/2026 16:59:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 16:59:16,480 INFO: 127.0.0.1 - - [05/Feb/2026 16:59:16] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-02-05 16:59:16,835 INFO: 127.0.0.1 - - [05/Feb/2026 16:59:16] "GET / HTTP/1.1" 200 -
+2026-02-05 16:59:16,866 INFO: 127.0.0.1 - - [05/Feb/2026 16:59:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 16:59:17,096 INFO: 127.0.0.1 - - [05/Feb/2026 16:59:17] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-02-05 16:59:17,178 ERROR: An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2026-02-05 16:59:17,179 INFO: 127.0.0.1 - - [05/Feb/2026 16:59:17] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2026-02-05 16:59:44,075 INFO: 127.0.0.1 - - [05/Feb/2026 16:59:44] "GET / HTTP/1.1" 200 -
+2026-02-05 16:59:44,381 INFO: 127.0.0.1 - - [05/Feb/2026 16:59:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 16:59:44,399 INFO: 127.0.0.1 - - [05/Feb/2026 16:59:44] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-02-05 16:59:44,729 ERROR: An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2026-02-05 16:59:44,730 INFO: 127.0.0.1 - - [05/Feb/2026 16:59:44] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2026-02-05 16:59:51,436 INFO: 127.0.0.1 - - [05/Feb/2026 16:59:51] "POST /live-voice HTTP/1.1" 200 -
+2026-02-05 16:59:56,304 INFO: 127.0.0.1 - - [05/Feb/2026 16:59:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 16:59:56,322 ERROR: An error occurred: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Aakash\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+2026-02-05 16:59:56,322 INFO: 127.0.0.1 - - [05/Feb/2026 16:59:56] "[35m[1mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 500 -
+2026-02-05 17:01:35,185 INFO:  * Detected change in 'D:\\only_founder_1\\app.py', reloading
+2026-02-05 17:01:35,432 INFO:  * Restarting with stat
+2026-02-05 17:01:37,499 WARNING:  * Debugger is active!
+2026-02-05 17:01:37,504 INFO:  * Debugger PIN: 998-104-148
+2026-02-05 17:01:58,831 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.16.44.186:8000
+2026-02-05 17:01:58,831 INFO: [33mPress CTRL+C to quit[0m
+2026-02-05 17:01:58,834 INFO:  * Restarting with stat
+2026-02-05 17:02:00,611 WARNING:  * Debugger is active!
+2026-02-05 17:02:00,612 INFO:  * Debugger PIN: 998-104-148
+2026-02-05 17:02:08,457 INFO: 127.0.0.1 - - [05/Feb/2026 17:02:08] "GET / HTTP/1.1" 200 -
+2026-02-05 17:02:08,464 INFO: 127.0.0.1 - - [05/Feb/2026 17:02:08] "GET / HTTP/1.1" 200 -
+2026-02-05 17:02:08,953 INFO: 127.0.0.1 - - [05/Feb/2026 17:02:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 17:02:09,032 INFO: 127.0.0.1 - - [05/Feb/2026 17:02:09] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-02-05 17:02:09,268 INFO: 127.0.0.1 - - [05/Feb/2026 17:02:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 17:02:09,349 INFO: 127.0.0.1 - - [05/Feb/2026 17:02:09] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-02-05 17:02:09,497 INFO: 127.0.0.1 - - [05/Feb/2026 17:02:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-02-05 17:02:30,155 INFO: 127.0.0.1 - - [05/Feb/2026 17:02:30] "POST /live-voice HTTP/1.1" 200 -
+2026-02-05 17:02:41,944 INFO: 127.0.0.1 - - [05/Feb/2026 17:02:41] "GET / HTTP/1.1" 200 -
+2026-02-05 17:02:42,255 INFO: 127.0.0.1 - - [05/Feb/2026 17:02:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 17:02:42,281 INFO: 127.0.0.1 - - [05/Feb/2026 17:02:42] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-02-05 17:02:49,200 INFO: 127.0.0.1 - - [05/Feb/2026 17:02:49] "POST /live-voice HTTP/1.1" 200 -
+2026-02-05 17:05:11,104 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.16.44.186:8000
+2026-02-05 17:05:11,104 INFO: [33mPress CTRL+C to quit[0m
+2026-02-05 17:05:11,108 INFO:  * Restarting with stat
+2026-02-05 17:05:12,672 WARNING:  * Debugger is active!
+2026-02-05 17:05:12,676 INFO:  * Debugger PIN: 998-104-148
+2026-02-05 17:05:38,167 INFO: 127.0.0.1 - - [05/Feb/2026 17:05:38] "GET / HTTP/1.1" 200 -
+2026-02-05 17:05:38,178 INFO: 127.0.0.1 - - [05/Feb/2026 17:05:38] "GET / HTTP/1.1" 200 -
+2026-02-05 17:05:38,412 INFO: 127.0.0.1 - - [05/Feb/2026 17:05:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 17:05:38,503 INFO: 127.0.0.1 - - [05/Feb/2026 17:05:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 17:05:38,734 INFO: 127.0.0.1 - - [05/Feb/2026 17:05:38] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-02-05 17:05:39,049 INFO: 127.0.0.1 - - [05/Feb/2026 17:05:39] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-02-05 17:06:31,275 INFO: 127.0.0.1 - - [05/Feb/2026 17:06:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 17:06:31,296 INFO: 127.0.0.1 - - [05/Feb/2026 17:06:31] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-02-05 17:08:10,989 INFO: 127.0.0.1 - - [05/Feb/2026 17:08:10] "GET / HTTP/1.1" 200 -
+2026-02-05 17:08:10,995 INFO: 127.0.0.1 - - [05/Feb/2026 17:08:10] "GET / HTTP/1.1" 200 -
+2026-02-05 17:08:11,261 INFO: 127.0.0.1 - - [05/Feb/2026 17:08:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 17:08:11,362 INFO: 127.0.0.1 - - [05/Feb/2026 17:08:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 17:08:11,578 INFO: 127.0.0.1 - - [05/Feb/2026 17:08:11] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-02-05 17:08:11,895 INFO: 127.0.0.1 - - [05/Feb/2026 17:08:11] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-02-05 17:09:06,105 INFO: 127.0.0.1 - - [05/Feb/2026 17:09:06] "POST /text-input HTTP/1.1" 200 -
+2026-02-05 17:10:03,645 INFO: 127.0.0.1 - - [05/Feb/2026 17:10:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 17:10:03,975 INFO: 127.0.0.1 - - [05/Feb/2026 17:10:03] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-02-05 17:11:58,953 INFO: 127.0.0.1 - - [05/Feb/2026 17:11:58] "GET / HTTP/1.1" 200 -
+2026-02-05 17:11:59,003 INFO: 127.0.0.1 - - [05/Feb/2026 17:11:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 17:11:59,213 INFO: 127.0.0.1 - - [05/Feb/2026 17:11:59] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-02-05 17:11:59,333 INFO: 127.0.0.1 - - [05/Feb/2026 17:11:59] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-02-05 17:17:04,844 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.16.44.186:8000
+2026-02-05 17:17:04,844 INFO: [33mPress CTRL+C to quit[0m
+2026-02-05 17:17:04,849 INFO:  * Restarting with stat
+2026-02-05 17:21:07,288 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.16.44.186:8000
+2026-02-05 17:21:07,288 INFO: [33mPress CTRL+C to quit[0m
+2026-02-05 17:21:07,288 INFO:  * Restarting with stat
+2026-02-05 17:21:09,366 WARNING:  * Debugger is active!
+2026-02-05 17:21:09,372 INFO:  * Debugger PIN: 998-104-148
+2026-02-05 17:21:09,950 INFO: 127.0.0.1 - - [05/Feb/2026 17:21:09] "GET / HTTP/1.1" 200 -
+2026-02-05 17:21:10,089 INFO: 127.0.0.1 - - [05/Feb/2026 17:21:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 17:21:10,191 INFO: 127.0.0.1 - - [05/Feb/2026 17:21:10] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-02-05 17:21:28,293 INFO: 127.0.0.1 - - [05/Feb/2026 17:21:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 17:21:28,296 INFO: 127.0.0.1 - - [05/Feb/2026 17:21:28] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-02-05 17:26:42,543 ERROR: 127.0.0.1 - - [05/Feb/2026 17:26:42] code 400, message Bad request version ('\x9a\x9a\x00\x00\x00')
+2026-02-05 17:26:42,545 INFO: 127.0.0.1 - - [05/Feb/2026 17:26:42] "[31m[1m\x16\x03\x01\x06ò\x01\x00\x06î\x03\x03¡ò=\x86Ä\x02çÑ\x13\x93èDä/ß\x93)#^}\x15¹ë;þ¬\x1dû8'\x04É \x858 \x07/zµ\x93lAè>&åyvìó÷»½\x17 [\x15ß½ußáÔ"\x00 ::\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x85\x9a\x9a\x00\x00\x00[0m" 400 -
+2026-02-05 17:26:42,547 ERROR: 127.0.0.1 - - [05/Feb/2026 17:26:42] code 400, message Bad request version ('ZZ\x00\x00\x00')
+2026-02-05 17:26:42,549 INFO: 127.0.0.1 - - [05/Feb/2026 17:26:42] "[31m[1m\x16\x03\x01\x06ò\x01\x00\x06î\x03\x03À¶Î«°\x04µ=Ë=±oa\x93B\x12\x97\x8fÞKSe\x09³ùã\x02\x14à_\x8e¬ $LôñÂÛ\x98m+PzFfî\x9cp\x80È³W\x07é°õ¾\x9b\x18k\x9b[WH\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x85ZZ\x00\x00\x00[0m" 400 -
+2026-02-05 17:26:42,764 ERROR: 127.0.0.1 - - [05/Feb/2026 17:26:42] code 400, message Bad request version ('\x91\x8b·°\x94É\x84\x96õ\x11\x98\x1a\x91Pc¢\xad\x83\x19ÏÏ6\x91±\x18$Ü\x17\x13Úù¿ñ\x941tic')
+2026-02-05 17:26:42,767 INFO: 127.0.0.1 - - [05/Feb/2026 17:26:42] "[31m[1m\x16\x03\x01\x06²\x01\x00\x06®\x03\x03¾·\x91\x90\x1f?q\x83t^»&´bþ\x96ôS\x96áÊÎXqaß\x18áÐ¦J_ \x8d¿\x07\x85 Ð\x0eûB<ñö]\x81®òÝ\x0fý{Ydh\x8f=\x80ü\x04\x1e\x9es+\x00 JJ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Eªª\x00\x00\x00\x00\x00\x0e\x00\x0c\x00\x00\x09localhost\x00\x1b\x00\x03\x02\x00\x02\x00\x12\x00\x00\x00\x0b\x00\x02\x01\x00\x00#\x00\x00\x003\x04ï\x04íÚÚ\x00\x01\x00\x11ì\x04À-\x9a ´A\x85©")Ãë³ÑrD\x1b\x81\x05ß'~ìù\x8ex\x93\x87áv\x1d\x85,[x¸\x11V¼1ð d\x8b \x1cxñ\x16\x91äJzxgëü\x85¯'3ªKu'÷|\x93Ô\x86\x82\x1c (ªJ$:G@ì@ÚðÆ]÷\x1ab¸­Àâ½\x15%\x8f\x80¦Ëø\x07¾\x0eã\x14h³=ø¢\x08ÌT\x8e2ÙÉ8{\x9eè§\x00s\x19Î\x0fË%\x0dÌ\x92öuÉp,:øVwÏsuJp,)ÚÁÀqNï1£ÐËh7&9\x8d*Î\x07\x07Å\x98Ò +:h«7y¶\x88\x1dáÈ|å·|r\x95\x84Ýé\x85\x85\x91\x8b·°\x94É\x84\x96õ\x11\x98\x1a\x91Pc¢­\x83\x19ÏÏ6\x91±\x18$Ü\x17\x13Úù¿ñ\x941tic[0m" 400 -
+2026-02-05 17:26:42,854 ERROR: 127.0.0.1 - - [05/Feb/2026 17:26:42] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06²\x01\x00\x06®\x03\x03;\x9eüÏ"')
+2026-02-05 17:26:42,854 INFO: 127.0.0.1 - - [05/Feb/2026 17:26:42] "[31m[1m\x16\x03\x01\x06²\x01\x00\x06®\x03\x03;\x9eüÏ"\x1f"Ï\x98[0m" 400 -
+2026-02-05 17:26:42,856 ERROR: 127.0.0.1 - - [05/Feb/2026 17:26:42] code 400, message Bad request syntax ('\x16\x03\x01\x06²\x01\x00\x06®\x03\x03H[äa©\x9e¹hÕµ')
+2026-02-05 17:26:42,856 INFO: 127.0.0.1 - - [05/Feb/2026 17:26:42] "[31m[1m\x16\x03\x01\x06²\x01\x00\x06®\x03\x03H[äa©\x9e¹hÕµ[0m" 400 -
+2026-02-05 17:26:43,068 ERROR: 127.0.0.1 - - [05/Feb/2026 17:26:43] code 400, message Bad request version ('\x84\x0fï\x81\x82\x16>n%>¥')
+2026-02-05 17:26:43,068 INFO: 127.0.0.1 - - [05/Feb/2026 17:26:43] "[31m[1m\x16\x03\x01\x06ò\x01\x00\x06î\x03\x03;So\x88\x9dát­WØwð\x91V0²^PØm*B×A"sÄ.\x9fú³Å §àÞpë>\x15 ¶ÿø\x84RÉÿ\x06ªLäw\x01Óe\x0dv\x19?R¸¾`\x00\x00 \x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x85\x9a\x9a\x00\x00ÿ\x01\x00\x01\x00þ\x0d\x00ú\x00\x00\x01\x00\x01Ó\x00 \x1fáî\x9a\x91yZ`ó\x8aõ¶C1\x8a¦\x98ê°\x0b\x19H*\x0e\x92t\x0fÃ\x9eÔ+w\x00Ð3\x156»\x13Ñª\x0eî7itÿå \x84\x0fï\x81\x82\x16>n%>¥[0m" 400 -
+2026-02-05 17:26:49,467 INFO: 127.0.0.1 - - [05/Feb/2026 17:26:49] "GET / HTTP/1.1" 200 -
+2026-02-05 17:26:49,490 INFO: 127.0.0.1 - - [05/Feb/2026 17:26:49] "GET / HTTP/1.1" 200 -
+2026-02-05 17:26:49,722 INFO: 127.0.0.1 - - [05/Feb/2026 17:26:49] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-02-05 17:26:49,807 INFO: 127.0.0.1 - - [05/Feb/2026 17:26:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 17:26:49,811 INFO: 127.0.0.1 - - [05/Feb/2026 17:26:49] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-02-05 17:26:50,035 INFO: 127.0.0.1 - - [05/Feb/2026 17:26:50] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-02-05 17:26:54,886 INFO: 127.0.0.1 - - [05/Feb/2026 17:26:54] "GET / HTTP/1.1" 200 -
+2026-02-05 17:26:54,916 INFO: 127.0.0.1 - - [05/Feb/2026 17:26:54] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-02-05 17:26:55,146 INFO: 127.0.0.1 - - [05/Feb/2026 17:26:55] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-02-05 17:26:55,467 INFO: 127.0.0.1 - - [05/Feb/2026 17:26:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-02-05 17:27:21,170 INFO: 127.0.0.1 - - [05/Feb/2026 17:27:21] "POST /text-input HTTP/1.1" 200 -
+2026-02-05 17:27:28,781 INFO: 127.0.0.1 - - [05/Feb/2026 17:27:28] "GET / HTTP/1.1" 200 -
+2026-02-05 17:27:28,812 INFO: 127.0.0.1 - - [05/Feb/2026 17:27:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-02-05 17:27:29,040 INFO: 127.0.0.1 - - [05/Feb/2026 17:27:29] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-02-05 17:27:57,558 INFO: 127.0.0.1 - - [05/Feb/2026 17:27:57] "POST /text-input HTTP/1.1" 200 -
+2026-02-05 17:40:25,132 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.16.44.186:8000
+2026-02-05 17:40:25,132 INFO: [33mPress CTRL+C to quit[0m
+2026-02-05 17:40:25,135 INFO:  * Restarting with stat
+2026-02-05 17:40:26,315 WARNING:  * Debugger is active!
+2026-02-05 17:40:26,318 INFO:  * Debugger PIN: 998-104-148
+2026-02-05 17:45:53,591 INFO: 127.0.0.1 - - [05/Feb/2026 17:45:53] "POST /text-input HTTP/1.1" 200 -
+2026-02-05 17:46:14,344 INFO: 127.0.0.1 - - [05/Feb/2026 17:46:14] "POST /text-input HTTP/1.1" 200 -
+2026-02-05 17:47:15,013 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.16.44.186:8000
+2026-02-05 17:47:15,013 INFO: [33mPress CTRL+C to quit[0m
+2026-02-05 17:47:15,016 INFO:  * Restarting with stat
+2026-02-05 17:47:16,206 WARNING:  * Debugger is active!
+2026-02-05 17:47:16,213 INFO:  * Debugger PIN: 998-104-148
+2026-02-05 17:47:25,881 INFO: 127.0.0.1 - - [05/Feb/2026 17:47:25] "GET / HTTP/1.1" 200 -
+2026-02-05 17:47:26,046 INFO: 127.0.0.1 - - [05/Feb/2026 17:47:26] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-02-05 17:47:26,125 INFO: 127.0.0.1 - - [05/Feb/2026 17:47:26] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-02-05 17:48:12,982 INFO: 127.0.0.1 - - [05/Feb/2026 17:48:12] "POST /text-input HTTP/1.1" 200 -
