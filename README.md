@@ -1,96 +1,78 @@
-# VECTOR AI Platform
+# VECTOR AI Platform 🚀
 
 -----------------------------------------------------------------
 
-LIVE DEMO:https://vector-ai-platform-gamma.vercel.app/
-
------------------------------------------------------------------
-
-PROCEDURE:
-
-git clone https://github.com/Bharanidharan03/onlyfounders.git
-cd onlyfounders
-npm install && npm run dev
-
+**LIVE DEMO**: [vector-ai-platform-gamma.vercel.app](https://vector-ai-platform-gamma.vercel.app/)
 
 -----------------------------------------------------------------
 
 A futuristic AI-powered educational platform combining Web3 authentication, skill verification, and personalized career guidance.
 
-## 🚀 Features
+## 🚀 Quick Start (Easiest Method)
 
-- **3D Holographic Landing Page** - Cyberpunk-inspired UI with rotating data cube
-- **AI Career Guidance** - Gemini 2.5 Flash powered department and role suggestions
-- **Real-time Hackathon Discovery** - Google Search grounding for live opportunities
-- **Multi-format Learning Converter** - Audio, PDF, and image to structured notes
-- **AI-Generated Quizzes** - Automatic assessment creation from learning content
-- **Skill Verification System** - AI-audited proof-of-skill authentication
-- **Web3 Wallet Integration** - MetaMask authentication
-- **Learning Diary** - Track and analyze your educational journey
+If you have Node.js and Python installed, you can start everything with a single command:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Bharanidharan03/onlyfounders.git
+cd onlyfounders
+
+# 2. Install dependencies (First time only)
+npm install
+
+# 3. Start Frontend & Backend together
+npm run dev:all
+```
+
+The application will be available at:
+- **Frontend**: http://localhost:5173
+- **Backend**: http://localhost:8000
+
+---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
-- React + Vite
-- Framer Motion (animations)
-- Glassmorphism UI design
-- CSS3 with 3D transforms
+- **React + Vite** - High-performance core
+- **Framer Motion** - 3D animations and transitions
+- **Glassmorphism UI** - Modern premium aesthetic
+- **Three.js / React Three Fiber** - 3D data visualizations
 
 ### Backend
-- FastAPI (Python)
-- SQLAlchemy ORM
-- Google Gemini AI (2.5 Flash)
-- Whisper (audio transcription)
-- Tesseract OCR (image processing)
-- PyMuPDF (PDF parsing)
+- **FastAPI (Python)** - High-performance API framework
+- **LangChain** - Orchestration for AI models
+- **Google Gemini 2.5 Flash** - Primary LLM for guidance and suggestions
+- **Ollama (Optional)** - Local AI support
+- **Local Embeddings** - Sentence-Transformers (all-MiniLM-L6-v2) for zero-dependency search
 
-## 📦 Installation
+---
 
-### Prerequisites
-- Node.js 18+
-- Python 3.11+
-- FFmpeg (for audio processing)
+## 🤖 AI Features (Smart Fallbacks)
 
-### Frontend Setup
-```bash
-npm install
-npm run dev
+This project is designed to work out-of-the-box. It uses a **tiered AI strategy**:
+1. **Primary**: If you have **Ollama** running locally, it will use local models (`phi3`).
+2. **Fallback**: If Ollama is not found, it automatically switches to **Google Gemini 2.5 Flash** for logic and **Local Sentence-Transformers** for data processing.
+
+---
+
+## ⚙️ Manual Configuration (Optional)
+
+### Environment Variables
+For production or higher limits, add your API key to a `.env` file in the root or `server/` directory:
+```env
+GEMINI_API_KEY=your_google_ai_key_here
 ```
 
-### Backend Setup
-```bash
-cd server
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-python main.py
-```
+### Prerequisite Checklist
+- **Node.js 18+**
+- **Python 3.11+**
+- **FFmpeg** (Optional: Required for live voice recording)
 
-## 🔑 Environment Variables
+## 🎨 Project Structure
 
-Create a `.env` file in the server directory:
-```
-GEMINI_API_KEY=your_gemini_api_key_here
-```
-
-## 🎨 UI Highlights
-
-- **Neon Gradients** - Cyan/purple color scheme
-- **3D Animations** - Rotating tesseract, floating elements
-- **Glass Morphism** - Frosted glass cards with backdrop blur
-- **Responsive Design** - Mobile-first approach
-
-## 🤖 AI Features
-
-1. **Department Suggestion** - Analyzes learning patterns to recommend academic streams
-2. **Role Prediction** - Extrapolates career paths from current skills
-3. **Opportunity Matching** - Real-time hackathon and competition discovery
-4. **Content Analysis** - Automatic topic extraction and quiz generation
+- `/src` - React frontend application
+- `/server` - Python FastAPI backend and AI engines
+- `/data` - Knowledge base for the vector search
 
 ## 📝 License
-
-MIT License - See LICENSE file for details
-
-## 👥 Contributors
-
-Built with ❤️ by the VECTOR team
+Built with ❤️ for the future of education.

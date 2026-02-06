@@ -8,7 +8,7 @@ from google.genai import types
 class SuggestionEngine:
     def __init__(self):
         # Using the Gemini API key provided by the user
-        self.api_key = "AIzaSyD1t3Tm5LYJ05O1a6yOxIlKPrN3Z8YKBy4"
+        self.api_key = os.getenv("GOOGLE_API_KEY", "AIzaSyD1t3Tm5LYJ05O1a6yOxIlKPrN3Z8YKBy4")
         
         # Initialize Google GenAI Client
         try:

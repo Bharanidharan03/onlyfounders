@@ -7,11 +7,34 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 
+from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_community.embeddings import HuggingFaceEmbeddings
+
 class VectorEngine:
     def __init__(self, model_name="phi3:mini"):
         self.model_name = model_name
-        self.llm = OllamaLLM(model=model_name, base_url="http://localhost:11434")
-        self.embeddings = OllamaEmbeddings(model=model_name, base_url="http://localhost:11434")
+        self.api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY") or "AIzaSyD1t3Tm5LYJ05O1a6yOxIlKPrN3Z8YKBy4"
+        
+        # Initialize LLM with Fallback
+        try:
+            self.llm = OllamaLLM(model=model_name, base_url="http://localhost:11434")
+            # Pulse check
+            import requests
+            requests.get("http://localhost:11434", timeout=1)
+        except:
+            print("Ollama not found. Falling back to Gemini for LLM.")
+            self.llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", google_api_key=self.api_key)
+
+        # Initialize Embeddings with Fallback
+        try:
+            self.embeddings = OllamaEmbeddings(model=model_name, base_url="http://localhost:11434")
+            # Pulse check
+            import requests
+            requests.get("http://localhost:11434", timeout=1)
+        except:
+            print("Ollama not found. Falling back to local Sentence-Transformers for Embeddings.")
+            self.embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+            
         self.vector_db_path = "./vector_db"
         self.db = None
 
@@ -118,7 +141,13 @@ class VectorEngine:
 
 class SkillEngine:
     def __init__(self, model_name="phi3:mini"):
-        self.llm = OllamaLLM(model=model_name, base_url="http://localhost:11434")
+        self.api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY") or "AIzaSyD1t3Tm5LYJ05O1a6yOxIlKPrN3Z8YKBy4"
+        try:
+            self.llm = OllamaLLM(model=model_name, base_url="http://localhost:11434")
+            import requests
+            requests.get("http://localhost:11434", timeout=1)
+        except:
+            self.llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", google_api_key=self.api_key)
 
     def verify_skill_claim(self, skill_data):
         """
@@ -232,7 +261,13 @@ class SkillEngine:
 
 class CareerEngine:
     def __init__(self, model_name="phi3:mini"):
-        self.llm = OllamaLLM(model=model_name, base_url="http://localhost:11434")
+        self.api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY") or "AIzaSyD1t3Tm5LYJ05O1a6yOxIlKPrN3Z8YKBy4"
+        try:
+            self.llm = OllamaLLM(model=model_name, base_url="http://localhost:11434")
+            import requests
+            requests.get("http://localhost:11434", timeout=1)
+        except:
+            self.llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", google_api_key=self.api_key)
 
     def get_recommendation(self, user_profile):
         """Generate career/education guidance."""
@@ -255,7 +290,12 @@ class CareerEngine:
 
 class NetworkingEngine:
     def __init__(self, model_name="phi3:mini"):
-        self.embeddings = OllamaEmbeddings(model=model_name, base_url="http://localhost:11434")
+        try:
+            self.embeddings = OllamaEmbeddings(model=model_name, base_url="http://localhost:11434")
+            import requests
+            requests.get("http://localhost:11434", timeout=1)
+        except:
+            self.embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
     
     def match_users(self, target_profile, candidates):
         """Match users based on embedding similarity of their goal/skill descriptions."""
