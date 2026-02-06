@@ -22,7 +22,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the server code
 COPY server/ /app/server/
-COPY .env /app/server/.env
 
 # Create data directories
 RUN mkdir -p /app/server/vector_db /app/server/uploads /app/server/data
