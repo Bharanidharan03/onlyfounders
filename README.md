@@ -1,10 +1,19 @@
 # VECTOR AI Platform
 
+-----------------------------------------------------------------
 
 LIVE DEMO:https://vector-ai-platform-gamma.vercel.app/
 
+-----------------------------------------------------------------
+
+PROCEDURE:
+
+git clone https://github.com/Bharanidharan03/onlyfounders.git
+cd onlyfounders
+npm install && npm run dev
 
 
+-----------------------------------------------------------------
 
 A futuristic AI-powered educational platform combining Web3 authentication, skill verification, and personalized career guidance.
 
