@@ -1,0 +1,200 @@
+[
+  {
+    "class": 12,
+    "subject": "Physics",
+    "chapter": "Electrostatics",
+    "content": "# Class 12 Physics: Electrostatics\n## 1. Coulomb's Law\n$$ F = \\\\frac{1}{4\\\\pi\\\\epsilon_0} \\\\frac{q_1 q_2}{r^2} $$\n\n## 2. Electric Field Lines\nimaginary lines representing the direction of the electric field.\n- Start from +ve charge, end at -ve charge.\n- Never intersect."
+  },
+  {
+    "class": 12,
+    "subject": "Physics",
+    "chapter": "Current Electricity",
+    "content": "### Fundamental Laws:\n- **Motion & Force**: Understanding the interaction between matter and energy in Current Electricity.\n- **Mathematical Models**: Using equations to predict the behavior of physical systems.\n- **Observation**: Real-world manifestations of physical properties and laws.\n- **Critical Thinking**: Analyzing complex systems by breaking them into simpler components."
+  },
+  {
+    "class": 12,
+    "subject": "Physics",
+    "chapter": "Magnetic Effects of Current",
+    "content": "### Fundamental Laws:\n- **Motion & Force**: Understanding the interaction between matter and energy in Magnetic Effects of Current.\n- **Mathematical Models**: Using equations to predict the behavior of physical systems.\n- **Observation**: Real-world manifestations of physical properties and laws.\n- **Critical Thinking**: Analyzing complex systems by breaking them into simpler components."
+  },
+  {
+    "class": 12,
+    "subject": "Physics",
+    "chapter": "Electromagnetic Induction",
+    "content": "### Fundamental Laws:\n- **Motion & Force**: Understanding the interaction between matter and energy in Electromagnetic Induction.\n- **Mathematical Models**: Using equations to predict the behavior of physical systems.\n- **Observation**: Real-world manifestations of physical properties and laws.\n- **Critical Thinking**: Analyzing complex systems by breaking them into simpler components."
+  },
+  {
+    "class": 12,
+    "subject": "Physics",
+    "chapter": "AC",
+    "content": "### Fundamental Laws:\n- **Motion & Force**: Understanding the interaction between matter and energy in AC.\n- **Mathematical Models**: Using equations to predict the behavior of physical systems.\n- **Observation**: Real-world manifestations of physical properties and laws.\n- **Critical Thinking**: Analyzing complex systems by breaking them into simpler components."
+  },
+  {
+    "class": 12,
+    "subject": "Physics",
+    "chapter": "Electromagnetic Waves",
+    "content": "### Fundamental Laws:\n- **Motion & Force**: Understanding the interaction between matter and energy in Electromagnetic Waves.\n- **Mathematical Models**: Using equations to predict the behavior of physical systems.\n- **Observation**: Real-world manifestations of physical properties and laws.\n- **Critical Thinking**: Analyzing complex systems by breaking them into simpler components."
+  },
+  {
+    "class": 12,
+    "subject": "Physics",
+    "chapter": "Optics",
+    "content": "### Fundamental Laws:\n- **Motion & Force**: Understanding the interaction between matter and energy in Optics.\n- **Mathematical Models**: Using equations to predict the behavior of physical systems.\n- **Observation**: Real-world manifestations of physical properties and laws.\n- **Critical Thinking**: Analyzing complex systems by breaking them into simpler components."
+  },
+  {
+    "class": 12,
+    "subject": "Physics",
+    "chapter": "Dual Nature of Radiation",
+    "content": "### Fundamental Laws:\n- **Motion & Force**: Understanding the interaction between matter and energy in Dual Nature of Radiation.\n- **Mathematical Models**: Using equations to predict the behavior of physical systems.\n- **Observation**: Real-world manifestations of physical properties and laws.\n- **Critical Thinking**: Analyzing complex systems by breaking them into simpler components."
+  },
+  {
+    "class": 12,
+    "subject": "Physics",
+    "chapter": "Atoms and Nuclei",
+    "content": "### Fundamental Laws:\n- **Motion & Force**: Understanding the interaction between matter and energy in Atoms and Nuclei.\n- **Mathematical Models**: Using equations to predict the behavior of physical systems.\n- **Observation**: Real-world manifestations of physical properties and laws.\n- **Critical Thinking**: Analyzing complex systems by breaking them into simpler components."
+  },
+  {
+    "class": 12,
+    "subject": "Physics",
+    "chapter": "Electronic Devices",
+    "content": "### Fundamental Laws:\n- **Motion & Force**: Understanding the interaction between matter and energy in Electronic Devices.\n- **Mathematical Models**: Using equations to predict the behavior of physical systems.\n- **Observation**: Real-world manifestations of physical properties and laws.\n- **Critical Thinking**: Analyzing complex systems by breaking them into simpler components."
+  },
+  {
+    "class": 12,
+    "subject": "Chemistry",
+    "chapter": "Electrochemistry",
+    "content": "# Class 12 Chemistry: Electrochemistry\n## 1. Electrochemical Cell\nDevice converting chemical energy into electrical energy. (Galvanic Cell)\n\n## 2. Nernst Equation\nRelates electrode potential to concentration of ions.\n$$ E_{cell} = E^0_{cell} - \\\\frac{RT}{nF} \\\\ln Q $$"
+  },
+  {
+    "class": 12,
+    "subject": "Chemistry",
+    "chapter": "Coordination Compounds",
+    "content": "### Molecular Insights:\n- **Atomic Structure**: Exploring how Coordination Compounds affects the composition of matter.\n- **Reactions & Bonds**: Understanding the energy changes and interactions at a molecular level.\n- **Laboratory Practices**: Safe and precise methods for investigating chemical properties.\n- **Sustainability**: The role of chemistry in creating new materials and preserving the environment."
+  },
+  {
+    "class": 12,
+    "subject": "Chemistry",
+    "chapter": "Organic Chemistry (Polymers)",
+    "content": "### Molecular Insights:\n- **Atomic Structure**: Exploring how Organic Chemistry (Polymers) affects the composition of matter.\n- **Reactions & Bonds**: Understanding the energy changes and interactions at a molecular level.\n- **Laboratory Practices**: Safe and precise methods for investigating chemical properties.\n- **Sustainability**: The role of chemistry in creating new materials and preserving the environment."
+  },
+  {
+    "class": 12,
+    "subject": "Chemistry",
+    "chapter": "Organic Chemistry (Biomolecules)",
+    "content": "### Molecular Insights:\n- **Atomic Structure**: Exploring how Organic Chemistry (Biomolecules) affects the composition of matter.\n- **Reactions & Bonds**: Understanding the energy changes and interactions at a molecular level.\n- **Laboratory Practices**: Safe and precise methods for investigating chemical properties.\n- **Sustainability**: The role of chemistry in creating new materials and preserving the environment."
+  },
+  {
+    "class": 12,
+    "subject": "Mathematics",
+    "chapter": "Calculus (Integration & Differentiation)",
+    "content": "# Class 12 Maths: Continuity & Differentiability\n## 1. Continuity\nA function $f(x)$ is continuous at $x=c$ if:\n$$ \\\\lim_{x \\\\to c^-} f(x) = \\\\lim_{x \\\\to c^+} f(x) = f(c) $$\n\n## 2. Differentiability\nA function is differentiable if its derivative exists at every point in its domain.\n$$ f'(x) = \\\\lim_{h \\\\to 0} \\\\frac{f(x+h) - f(x)}{h} $$"
+  },
+  {
+    "class": 12,
+    "subject": "Mathematics",
+    "chapter": "Vectors and 3D Geometry",
+    "content": "### Key Concepts:\n- **Fundamentals**: Understanding the core definitions and axioms of Vectors and 3D Geometry.\n- **Problem Solving**: Identifying patterns and applying the correct formulas to solve numerical problems.\n- **Applications**: Real-world usage in physics, engineering, and daily calculations.\n- **Mastery**: Regular practice of theorems and logical proofs is essential."
+  },
+  {
+    "class": 12,
+    "subject": "Mathematics",
+    "chapter": "Linear Programming",
+    "content": "### Key Concepts:\n- **Fundamentals**: Understanding the core definitions and axioms of Linear Programming.\n- **Problem Solving**: Identifying patterns and applying the correct formulas to solve numerical problems.\n- **Applications**: Real-world usage in physics, engineering, and daily calculations.\n- **Mastery**: Regular practice of theorems and logical proofs is essential."
+  },
+  {
+    "class": 12,
+    "subject": "Mathematics",
+    "chapter": "Probability II",
+    "content": "### Key Concepts:\n- **Fundamentals**: Understanding the core definitions and axioms of Probability II.\n- **Problem Solving**: Identifying patterns and applying the correct formulas to solve numerical problems.\n- **Applications**: Real-world usage in physics, engineering, and daily calculations.\n- **Mastery**: Regular practice of theorems and logical proofs is essential."
+  },
+  {
+    "class": 12,
+    "subject": "Biology",
+    "chapter": "Genetics and Evolution",
+    "content": "# Class 12 Biology: Heredity\n## 1. Mendel\u2019s Laws\n- **Law of Dominance:** One factor in a pair dominates the other.\n- **Law of Segregation:** Alleles separate during gamete formation.\n\n## 2. DNA Structure\nDouble helix model proposed by Watson and Crick. Made of nucleotides (Sugar + Phosphate + Nitrogenous Base)."
+  },
+  {
+    "class": 12,
+    "subject": "Biology",
+    "chapter": "Biotechnology",
+    "content": "### Essential Notes:\n- **Summary**: A comprehensive overview of the main topics in Biotechnology.\n- **Learning Objectives**: Identifying the key outcomes and skills to be mastered.\n- **Practical Application**: How to use this knowledge in academic and real-life scenarios.\n- **Review**: Important terms and concepts to remember for exam preparation."
+  },
+  {
+    "class": 12,
+    "subject": "Biology",
+    "chapter": "Ecology and Environment",
+    "content": "### Essential Notes:\n- **Summary**: A comprehensive overview of the main topics in Ecology and Environment.\n- **Learning Objectives**: Identifying the key outcomes and skills to be mastered.\n- **Practical Application**: How to use this knowledge in academic and real-life scenarios.\n- **Review**: Important terms and concepts to remember for exam preparation."
+  },
+  {
+    "class": 12,
+    "subject": "Computer Science",
+    "chapter": "Data Structures",
+    "content": "# Class 12 CS: Data Structures\n## 1. Stack\nLIFO (Last In First Out) structure.\nOperations: Push, Pop, Peek.\n\n## 2. Queue\nFIFO (First In First Out) structure.\nOperations: Enqueue, Dequeue."
+  },
+  {
+    "class": 12,
+    "subject": "Computer Science",
+    "chapter": "File Handling",
+    "content": "### Core Principles:\n- **Observation**: Studying the natural phenomena related to File Handling.\n- **Experimental Proof**: How scientific laws are verified through structured experiments.\n- **Safety & Process**: Understanding the systematic approach to handling materials and data.\n- **Innovation**: Exploring how this field contributes to modern technology and health."
+  },
+  {
+    "class": 12,
+    "subject": "Computer Science",
+    "chapter": "SQL & Databases",
+    "content": "### Core Principles:\n- **Observation**: Studying the natural phenomena related to SQL & Databases.\n- **Experimental Proof**: How scientific laws are verified through structured experiments.\n- **Safety & Process**: Understanding the systematic approach to handling materials and data.\n- **Innovation**: Exploring how this field contributes to modern technology and health."
+  },
+  {
+    "class": 12,
+    "subject": "Computer Science",
+    "chapter": "Computer Networks",
+    "content": "### Core Principles:\n- **Observation**: Studying the natural phenomena related to Computer Networks.\n- **Experimental Proof**: How scientific laws are verified through structured experiments.\n- **Safety & Process**: Understanding the systematic approach to handling materials and data.\n- **Innovation**: Exploring how this field contributes to modern technology and health."
+  },
+  {
+    "class": 12,
+    "subject": "Accountancy",
+    "chapter": "Partnership Accounts",
+    "content": "# Class 12 Accountancy: Partnership\n## 1. Partnership Deed\nWritten agreement specifying terms like profit ratio, interest on capital, etc.\n\n## 2. Accounting Treatment\n- Preparation of Profit & Loss Appropriation A/c.\n- Calculation of Goodwill (Average Profit, Super Profit methods)."
+  },
+  {
+    "class": 12,
+    "subject": "Accountancy",
+    "chapter": "Company Accounts",
+    "content": "### Strategic Operations:\n- **Core Economics**: Understanding the financial principles behind Company Accounts.\n- **Strategy & Growth**: How organizations plan and execute for long-term success.\n- **Management & Ethics**: Balancing profit with social responsibility and team leadership.\n- **Market Dynamics**: Analyzing supply, demand, and competition in the industry."
+  },
+  {
+    "class": 12,
+    "subject": "Business Studies",
+    "chapter": "Principles of Management",
+    "content": "# Class 12 Business Studies: Principles\n## 1. Fayol's Principles\n- Division of Work\n- Authority and Responsibility\n- Discipline\n- Unity of Command\n- Unity of Direction...\n\n## 2. Significance\nProvide useful insights to reality, optimum utilization of resources, scientific decisions."
+  },
+  {
+    "class": 12,
+    "subject": "Business Studies",
+    "chapter": "Marketing",
+    "content": "### Strategic Operations:\n- **Core Economics**: Understanding the financial principles behind Marketing.\n- **Strategy & Growth**: How organizations plan and execute for long-term success.\n- **Management & Ethics**: Balancing profit with social responsibility and team leadership.\n- **Market Dynamics**: Analyzing supply, demand, and competition in the industry."
+  },
+  {
+    "class": 12,
+    "subject": "Business Studies",
+    "chapter": "Financial Management",
+    "content": "### Strategic Operations:\n- **Core Economics**: Understanding the financial principles behind Financial Management.\n- **Strategy & Growth**: How organizations plan and execute for long-term success.\n- **Management & Ethics**: Balancing profit with social responsibility and team leadership.\n- **Market Dynamics**: Analyzing supply, demand, and competition in the industry."
+  },
+  {
+    "class": 12,
+    "subject": "Business Studies",
+    "chapter": "Human Resources",
+    "content": "### Strategic Operations:\n- **Core Economics**: Understanding the financial principles behind Human Resources.\n- **Strategy & Growth**: How organizations plan and execute for long-term success.\n- **Management & Ethics**: Balancing profit with social responsibility and team leadership.\n- **Market Dynamics**: Analyzing supply, demand, and competition in the industry."
+  },
+  {
+    "class": 12,
+    "subject": "Economics",
+    "chapter": "Macroeconomics",
+    "content": "# Class 12 Economics: Macroeconomics\n## 1. National Income\nMoney value of all final goods and services produced in an economy during a financial year.\n\n## 2. Circular Flow of Income\nFlow of payments and receipts between domestic firms and households.\n$$ Y = C + I + G + (X-M) $$"
+  },
+  {
+    "class": 12,
+    "subject": "Economics",
+    "chapter": "Indian Economic Development",
+    "content": "### Technical Foundations:\n- **Logic & Structure**: Understanding the algorithms and data organizations in Indian Economic Development.\n- **Syntax & Semantics**: Mastering the rules of programming and system architecture.\n- **Debugging & Optimization**: Learning to improve efficiency and fix errors in code.\n- **Future Trends**: How this technology is evolving and impacting the digital world."
+  }
+]

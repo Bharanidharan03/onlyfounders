@@ -1,0 +1,218 @@
+[
+  {
+    "class": 11,
+    "subject": "Physics",
+    "chapter": "Physical World and Measurement",
+    "content": "# Class 11 Physics: Units & Measurement\n## 1. SI Units\nInternational System of Units.\n- Length: metre (m)\n- Mass: kilogram (kg)\n- Time: second (s)\n- Electric Current: ampere (A)\n\n## 2. Dimensional Analysis\nChecking the correctness of a physical equation.\nExample: Force $[MLT^{-2}]$."
+  },
+  {
+    "class": 11,
+    "subject": "Physics",
+    "chapter": "Kinematics",
+    "content": "### Fundamental Laws:\n- **Motion & Force**: Understanding the interaction between matter and energy in Kinematics.\n- **Mathematical Models**: Using equations to predict the behavior of physical systems.\n- **Observation**: Real-world manifestations of physical properties and laws.\n- **Critical Thinking**: Analyzing complex systems by breaking them into simpler components."
+  },
+  {
+    "class": 11,
+    "subject": "Physics",
+    "chapter": "Laws of Motion",
+    "content": "### Fundamental Laws:\n- **Motion & Force**: Understanding the interaction between matter and energy in Laws of Motion.\n- **Mathematical Models**: Using equations to predict the behavior of physical systems.\n- **Observation**: Real-world manifestations of physical properties and laws.\n- **Critical Thinking**: Analyzing complex systems by breaking them into simpler components."
+  },
+  {
+    "class": 11,
+    "subject": "Physics",
+    "chapter": "Work",
+    "content": "### Fundamental Laws:\n- **Motion & Force**: Understanding the interaction between matter and energy in Work.\n- **Mathematical Models**: Using equations to predict the behavior of physical systems.\n- **Observation**: Real-world manifestations of physical properties and laws.\n- **Critical Thinking**: Analyzing complex systems by breaking them into simpler components."
+  },
+  {
+    "class": 11,
+    "subject": "Physics",
+    "chapter": "Energy and Power",
+    "content": "### Fundamental Laws:\n- **Motion & Force**: Understanding the interaction between matter and energy in Energy and Power.\n- **Mathematical Models**: Using equations to predict the behavior of physical systems.\n- **Observation**: Real-world manifestations of physical properties and laws.\n- **Critical Thinking**: Analyzing complex systems by breaking them into simpler components."
+  },
+  {
+    "class": 11,
+    "subject": "Physics",
+    "chapter": "Motion of System of Particles",
+    "content": "### Fundamental Laws:\n- **Motion & Force**: Understanding the interaction between matter and energy in Motion of System of Particles.\n- **Mathematical Models**: Using equations to predict the behavior of physical systems.\n- **Observation**: Real-world manifestations of physical properties and laws.\n- **Critical Thinking**: Analyzing complex systems by breaking them into simpler components."
+  },
+  {
+    "class": 11,
+    "subject": "Physics",
+    "chapter": "Gravitation",
+    "content": "### Fundamental Laws:\n- **Motion & Force**: Understanding the interaction between matter and energy in Gravitation.\n- **Mathematical Models**: Using equations to predict the behavior of physical systems.\n- **Observation**: Real-world manifestations of physical properties and laws.\n- **Critical Thinking**: Analyzing complex systems by breaking them into simpler components."
+  },
+  {
+    "class": 11,
+    "subject": "Physics",
+    "chapter": "Properties of Bulk Matter",
+    "content": "### Fundamental Laws:\n- **Motion & Force**: Understanding the interaction between matter and energy in Properties of Bulk Matter.\n- **Mathematical Models**: Using equations to predict the behavior of physical systems.\n- **Observation**: Real-world manifestations of physical properties and laws.\n- **Critical Thinking**: Analyzing complex systems by breaking them into simpler components."
+  },
+  {
+    "class": 11,
+    "subject": "Physics",
+    "chapter": "Thermodynamics",
+    "content": "### Fundamental Laws:\n- **Motion & Force**: Understanding the interaction between matter and energy in Thermodynamics.\n- **Mathematical Models**: Using equations to predict the behavior of physical systems.\n- **Observation**: Real-world manifestations of physical properties and laws.\n- **Critical Thinking**: Analyzing complex systems by breaking them into simpler components."
+  },
+  {
+    "class": 11,
+    "subject": "Physics",
+    "chapter": "Behaviour of Perfect Gas",
+    "content": "### Fundamental Laws:\n- **Motion & Force**: Understanding the interaction between matter and energy in Behaviour of Perfect Gas.\n- **Mathematical Models**: Using equations to predict the behavior of physical systems.\n- **Observation**: Real-world manifestations of physical properties and laws.\n- **Critical Thinking**: Analyzing complex systems by breaking them into simpler components."
+  },
+  {
+    "class": 11,
+    "subject": "Physics",
+    "chapter": "Oscillations and Waves",
+    "content": "### Fundamental Laws:\n- **Motion & Force**: Understanding the interaction between matter and energy in Oscillations and Waves.\n- **Mathematical Models**: Using equations to predict the behavior of physical systems.\n- **Observation**: Real-world manifestations of physical properties and laws.\n- **Critical Thinking**: Analyzing complex systems by breaking them into simpler components."
+  },
+  {
+    "class": 11,
+    "subject": "Chemistry",
+    "chapter": "Basic Concepts of Chemistry",
+    "content": "# Class 11 Chemistry: Basic Concepts\n## 1. Mole Concept\nOne mole is the amount of substance that contains as many particles as there are atoms in exactly 12g of C-12 isotope.\n$$ N_A = 6.022 \\\\times 10^{23} $$\n\n## 2. Laws of Chemical Combination\n- Law of Conservation of Mass\n- Law of Definite Proportions\n- Law of Multiple Proportions"
+  },
+  {
+    "class": 11,
+    "subject": "Chemistry",
+    "chapter": "Atomic Structure",
+    "content": "### Molecular Insights:\n- **Atomic Structure**: Exploring how Atomic Structure affects the composition of matter.\n- **Reactions & Bonds**: Understanding the energy changes and interactions at a molecular level.\n- **Laboratory Practices**: Safe and precise methods for investigating chemical properties.\n- **Sustainability**: The role of chemistry in creating new materials and preserving the environment."
+  },
+  {
+    "class": 11,
+    "subject": "Chemistry",
+    "chapter": "Periodic Table",
+    "content": "### Molecular Insights:\n- **Atomic Structure**: Exploring how Periodic Table affects the composition of matter.\n- **Reactions & Bonds**: Understanding the energy changes and interactions at a molecular level.\n- **Laboratory Practices**: Safe and precise methods for investigating chemical properties.\n- **Sustainability**: The role of chemistry in creating new materials and preserving the environment."
+  },
+  {
+    "class": 11,
+    "subject": "Chemistry",
+    "chapter": "Chemical Bonding",
+    "content": "### Molecular Insights:\n- **Atomic Structure**: Exploring how Chemical Bonding affects the composition of matter.\n- **Reactions & Bonds**: Understanding the energy changes and interactions at a molecular level.\n- **Laboratory Practices**: Safe and precise methods for investigating chemical properties.\n- **Sustainability**: The role of chemistry in creating new materials and preserving the environment."
+  },
+  {
+    "class": 11,
+    "subject": "Chemistry",
+    "chapter": "Thermodynamics",
+    "content": "### Molecular Insights:\n- **Atomic Structure**: Exploring how Thermodynamics affects the composition of matter.\n- **Reactions & Bonds**: Understanding the energy changes and interactions at a molecular level.\n- **Laboratory Practices**: Safe and precise methods for investigating chemical properties.\n- **Sustainability**: The role of chemistry in creating new materials and preserving the environment."
+  },
+  {
+    "class": 11,
+    "subject": "Chemistry",
+    "chapter": "Equilibrium",
+    "content": "### Molecular Insights:\n- **Atomic Structure**: Exploring how Equilibrium affects the composition of matter.\n- **Reactions & Bonds**: Understanding the energy changes and interactions at a molecular level.\n- **Laboratory Practices**: Safe and precise methods for investigating chemical properties.\n- **Sustainability**: The role of chemistry in creating new materials and preserving the environment."
+  },
+  {
+    "class": 11,
+    "subject": "Chemistry",
+    "chapter": "Organic Chemistry (Hydrocarbons)",
+    "content": "### Molecular Insights:\n- **Atomic Structure**: Exploring how Organic Chemistry (Hydrocarbons) affects the composition of matter.\n- **Reactions & Bonds**: Understanding the energy changes and interactions at a molecular level.\n- **Laboratory Practices**: Safe and precise methods for investigating chemical properties.\n- **Sustainability**: The role of chemistry in creating new materials and preserving the environment."
+  },
+  {
+    "class": 11,
+    "subject": "Mathematics",
+    "chapter": "Sets",
+    "content": "### Key Concepts:\n- **Fundamentals**: Understanding the core definitions and axioms of Sets.\n- **Problem Solving**: Identifying patterns and applying the correct formulas to solve numerical problems.\n- **Applications**: Real-world usage in physics, engineering, and daily calculations.\n- **Mastery**: Regular practice of theorems and logical proofs is essential."
+  },
+  {
+    "class": 11,
+    "subject": "Mathematics",
+    "chapter": "Relations",
+    "content": "### Key Concepts:\n- **Fundamentals**: Understanding the core definitions and axioms of Relations.\n- **Problem Solving**: Identifying patterns and applying the correct formulas to solve numerical problems.\n- **Applications**: Real-world usage in physics, engineering, and daily calculations.\n- **Mastery**: Regular practice of theorems and logical proofs is essential."
+  },
+  {
+    "class": 11,
+    "subject": "Mathematics",
+    "chapter": "Functions",
+    "content": "### Key Concepts:\n- **Fundamentals**: Understanding the core definitions and axioms of Functions.\n- **Problem Solving**: Identifying patterns and applying the correct formulas to solve numerical problems.\n- **Applications**: Real-world usage in physics, engineering, and daily calculations.\n- **Mastery**: Regular practice of theorems and logical proofs is essential."
+  },
+  {
+    "class": 11,
+    "subject": "Mathematics",
+    "chapter": "Trigonometry",
+    "content": "### Key Concepts:\n- **Fundamentals**: Understanding the core definitions and axioms of Trigonometry.\n- **Problem Solving**: Identifying patterns and applying the correct formulas to solve numerical problems.\n- **Applications**: Real-world usage in physics, engineering, and daily calculations.\n- **Mastery**: Regular practice of theorems and logical proofs is essential."
+  },
+  {
+    "class": 11,
+    "subject": "Mathematics",
+    "chapter": "Calculus (Limits)",
+    "content": "### Key Concepts:\n- **Fundamentals**: Understanding the core definitions and axioms of Calculus (Limits).\n- **Problem Solving**: Identifying patterns and applying the correct formulas to solve numerical problems.\n- **Applications**: Real-world usage in physics, engineering, and daily calculations.\n- **Mastery**: Regular practice of theorems and logical proofs is essential."
+  },
+  {
+    "class": 11,
+    "subject": "Mathematics",
+    "chapter": "Probability I",
+    "content": "### Key Concepts:\n- **Fundamentals**: Understanding the core definitions and axioms of Probability I.\n- **Problem Solving**: Identifying patterns and applying the correct formulas to solve numerical problems.\n- **Applications**: Real-world usage in physics, engineering, and daily calculations.\n- **Mastery**: Regular practice of theorems and logical proofs is essential."
+  },
+  {
+    "class": 11,
+    "subject": "Mathematics",
+    "chapter": "Linear Inequalities",
+    "content": "### Key Concepts:\n- **Fundamentals**: Understanding the core definitions and axioms of Linear Inequalities.\n- **Problem Solving**: Identifying patterns and applying the correct formulas to solve numerical problems.\n- **Applications**: Real-world usage in physics, engineering, and daily calculations.\n- **Mastery**: Regular practice of theorems and logical proofs is essential."
+  },
+  {
+    "class": 11,
+    "subject": "Biology",
+    "chapter": "Diversity in Living World",
+    "content": "# Class 11 Biology: The Living World\n## 1. Characteristics of Living\n- Growth\n- Reproduction\n- Metabolism\n- Cellular Organization\n- Consciousness\n\n## 2. Taxonomy\nProcess of classification of all living organisms into different taxa based on characteristics.\nOrder: Kingdom > Phylum > Class > Order > Family > Genus > Species."
+  },
+  {
+    "class": 11,
+    "subject": "Biology",
+    "chapter": "Cell Biology",
+    "content": "### Essential Notes:\n- **Summary**: A comprehensive overview of the main topics in Cell Biology.\n- **Learning Objectives**: Identifying the key outcomes and skills to be mastered.\n- **Practical Application**: How to use this knowledge in academic and real-life scenarios.\n- **Review**: Important terms and concepts to remember for exam preparation."
+  },
+  {
+    "class": 11,
+    "subject": "Biology",
+    "chapter": "Plant Physiology",
+    "content": "### Essential Notes:\n- **Summary**: A comprehensive overview of the main topics in Plant Physiology.\n- **Learning Objectives**: Identifying the key outcomes and skills to be mastered.\n- **Practical Application**: How to use this knowledge in academic and real-life scenarios.\n- **Review**: Important terms and concepts to remember for exam preparation."
+  },
+  {
+    "class": 11,
+    "subject": "Biology",
+    "chapter": "Human Physiology",
+    "content": "### Essential Notes:\n- **Summary**: A comprehensive overview of the main topics in Human Physiology.\n- **Learning Objectives**: Identifying the key outcomes and skills to be mastered.\n- **Practical Application**: How to use this knowledge in academic and real-life scenarios.\n- **Review**: Important terms and concepts to remember for exam preparation."
+  },
+  {
+    "class": 11,
+    "subject": "Computer Science",
+    "chapter": "Python Programming Basics",
+    "content": "# Class 11 CS: Python Basics\n## 1. Introduction\nPython is a high-level, interpreted, general-purpose programming language. Created by Guido van Rossum.\n\n## 2. Variables\nContainers for storing data values.\n\\"
+  },
+  {
+    "class": 11,
+    "subject": "Computer Science",
+    "chapter": "Boolean Logic",
+    "content": "### Core Principles:\n- **Observation**: Studying the natural phenomena related to Boolean Logic.\n- **Experimental Proof**: How scientific laws are verified through structured experiments.\n- **Safety & Process**: Understanding the systematic approach to handling materials and data.\n- **Innovation**: Exploring how this field contributes to modern technology and health."
+  },
+  {
+    "class": 11,
+    "subject": "Accountancy",
+    "chapter": "Fundamentals of Accounting",
+    "content": "# Class 11 Accountancy: Introduction\n## 1. Definition\nAccounting is the art of recording, classifying, and summarizing in a significant manner and in terms of money, transactions and events which are, in part at least, of financial character.\n\n## 2. Golden Rules\n- **Personal:** Debit the receiver, Credit the giver.\n- **Real:** Debit what comes in, Credit what goes out.\n- **Nominal:** Debit all expenses, Credit all incomes."
+  },
+  {
+    "class": 11,
+    "subject": "Accountancy",
+    "chapter": "Financial Statements",
+    "content": "### Strategic Operations:\n- **Core Economics**: Understanding the financial principles behind Financial Statements.\n- **Strategy & Growth**: How organizations plan and execute for long-term success.\n- **Management & Ethics**: Balancing profit with social responsibility and team leadership.\n- **Market Dynamics**: Analyzing supply, demand, and competition in the industry."
+  },
+  {
+    "class": 11,
+    "subject": "Business Studies",
+    "chapter": "Nature and Purpose of Business",
+    "content": "# Class 11 Business Studies: Nature of Business\n## 1. Economic Activities\nActivities undertaken to earn money.\n- Business\n- Profession\n- Employment\n\n## 2. Meaning of Business\nAn economic activity involving the production and sale of goods and services undertaken with a motive of earning profit."
+  },
+  {
+    "class": 11,
+    "subject": "Business Studies",
+    "chapter": "Internal Trade",
+    "content": "### Strategic Operations:\n- **Core Economics**: Understanding the financial principles behind Internal Trade.\n- **Strategy & Growth**: How organizations plan and execute for long-term success.\n- **Management & Ethics**: Balancing profit with social responsibility and team leadership.\n- **Market Dynamics**: Analyzing supply, demand, and competition in the industry."
+  },
+  {
+    "class": 11,
+    "subject": "Economics",
+    "chapter": "Microeconomics",
+    "content": "# Class 11 Economics: Microeconomics\n## 1. Central Problems of an Economy\n- What to produce?\n- How to produce?\n- For whom to produce?\n\n## 2. PPC (Production Possibility Frontier)\nShows all possible combinations of two goods that an economy can produce with given resources and technology."
+  }
+]
