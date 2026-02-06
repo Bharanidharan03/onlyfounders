@@ -138,12 +138,15 @@ def solve_doubt(req: DoubtRequest, db: Session = Depends(get_db)):
         answer = vector_engine.solve_doubt(req.query, req.class_val, req.subject, req.chapter)
         
         # Log the AI interaction
-        log = AILog(wallet_address=req.wallet_address, type="Doubt", query=req.query, response=answer)
+        log = AILog(wallet_address=req.wallet_address, type="Doubt", query=req.query, response=str(answer))
         db.add(log)
         db.commit()
         
         return {"answer": answer}
     except Exception as e:
+        print(f"CRITICAL ERROR in /solve-doubt: {str(e)}")
+        import traceback
+        traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/submit-skill")

@@ -9,11 +9,12 @@ from langchain_core.documents import Document
 
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_core.output_parsers import StrOutputParser
 
 class VectorEngine:
     def __init__(self, model_name="phi3:mini"):
         self.model_name = model_name
-        self.api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY") or "AIzaSyD1t3Tm5LYJ05O1a6yOxIlKPrN3Z8YKBy4"
+        self.api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY") or "AIzaSyCSMxvCyT8maRizUik4Ia13hu9VFGEsDfs"
         
         # Initialize LLM with Fallback
         try:
@@ -127,7 +128,7 @@ class VectorEngine:
             Output Protocol (Crispy 3-points + Analogy):
             """)
             
-            chain = prompt | self.llm
+            chain = prompt | self.llm | StrOutputParser()
             return chain.invoke({
                 "context": context, 
                 "query": query,
@@ -137,11 +138,13 @@ class VectorEngine:
             })
         except Exception as e:
             print(f"Error in solve_doubt: {e}")
-            return "Hey! My AI brain is currently resting (Ollama is offline). But based on the textbook, this chapter covers the fundamental concepts you were looking for. Try asking again in a few minutes!"
+            if "Ollama" in str(e) or "11434" in str(e):
+                return "Hey! My AI brain is currently resting (Ollama is offline). But based on the textbook, this chapter covers the fundamental concepts you were looking for. Try asking again in a few minutes!"
+            return f"V-Tutor is experiencing a neural sync issue: {str(e)[:100]}. Please check your API key or connection."
 
 class SkillEngine:
     def __init__(self, model_name="phi3:mini"):
-        self.api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY") or "AIzaSyD1t3Tm5LYJ05O1a6yOxIlKPrN3Z8YKBy4"
+        self.api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY") or "AIzaSyCSMxvCyT8maRizUik4Ia13hu9VFGEsDfs"
         try:
             self.llm = OllamaLLM(model=model_name, base_url="http://localhost:11434")
             import requests
@@ -199,7 +202,7 @@ class SkillEngine:
         }}
         """)
         
-        chain = prompt | self.llm
+        chain = prompt | self.llm | StrOutputParser()
         try:
             res = chain.invoke({
                 "skill_name": skill_data.get('skill_name', 'Unknown'),
@@ -261,7 +264,7 @@ class SkillEngine:
 
 class CareerEngine:
     def __init__(self, model_name="phi3:mini"):
-        self.api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY") or "AIzaSyD1t3Tm5LYJ05O1a6yOxIlKPrN3Z8YKBy4"
+        self.api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY") or "AIzaSyCSMxvCyT8maRizUik4Ia13hu9VFGEsDfs"
         try:
             self.llm = OllamaLLM(model=model_name, base_url="http://localhost:11434")
             import requests
@@ -282,7 +285,7 @@ class CareerEngine:
         4. Skill Gap (What to learn next?)
         """)
         try:
-            chain = prompt | self.llm
+            chain = prompt | self.llm | StrOutputParser()
             return chain.invoke({"user_profile": json.dumps(user_profile)})
         except Exception as e:
             print(f"Career Guidance AI Error: {e}")

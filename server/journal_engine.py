@@ -3,6 +3,9 @@ import re
 from typing import Dict, List, Any
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
+import os
+from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_core.output_parsers import StrOutputParser
 
 
 class JournalEngine:
@@ -10,7 +13,17 @@ class JournalEngine:
     
     def __init__(self, model_name="phi3:mini"):
         self.model_name = model_name
-        self.llm = OllamaLLM(model=model_name, base_url="http://localhost:11434")
+        self.api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY") or "AIzaSyCSMxvCyT8maRizUik4Ia13hu9VFGEsDfs"
+        
+        try:
+            self.llm = OllamaLLM(model=model_name, base_url="http://localhost:11434")
+            # Pulse check
+            import requests
+            requests.get("http://localhost:11434", timeout=1)
+        except:
+            print("Ollama not found. Falling back to Gemini for JournalEngine.")
+            self.llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", google_api_key=self.api_key)
+
         self.learning_keywords = [
             'learned', 'studied', 'watched', 'completed', 'finished', 'read',
             'course', 'tutorial', 'video', 'book', 'chapter', 'lesson',
@@ -31,7 +44,7 @@ class JournalEngine:
             
             Heading:
             """)
-            chain = prompt | self.llm
+            chain = prompt | self.llm | StrOutputParser()
             res = chain.invoke({"content_type": content_type, "content": content[:500]})
             return res.strip().replace('"', '')
         except:
@@ -56,7 +69,7 @@ class JournalEngine:
             
             Topics:
             """)
-            chain = prompt | self.llm
+            chain = prompt | self.llm | StrOutputParser()
             res = chain.invoke({"content": content[:800]})
             topics = [t.strip().strip('"').lower() for t in res.split(',')]
             return [t for t in topics if t and len(t) > 2][:5]
@@ -95,8 +108,11 @@ class JournalEngine:
             
             Return ONLY a JSON array of strings: ["question 1", "question 2", ...]
             """)
-            chain = prompt | self.llm
-            res = chain.invoke({"content": content[:1000], "topics": ", ".join(topics)})
+            chain = prompt | self.llm | StrOutputParser()
+            res = chain.invoke({
+                "topics": ", ".join(topics), 
+                "content": content[:1500]
+            })
             
             # Extract JSON list
             match = re.search(r'\[.*\]', res, re.DOTALL)
@@ -174,7 +190,7 @@ class JournalEngine:
               "logic": "Why did you give this score?"
             }}
             """)
-            chain = prompt | self.llm
+            chain = prompt | self.llm | StrOutputParser()
             res = chain.invoke({"contents": contents[:1000], "qa_text": "\n\n".join(q_and_a)})
             
             match = re.search(r'\{.*\}', res, re.DOTALL)
@@ -217,7 +233,7 @@ class JournalEngine:
               "heading": "Professional Heading for Journal"
             }}
             """)
-            chain = prompt | self.llm
+            chain = prompt | self.llm | StrOutputParser()
             res = chain.invoke({"ocr_text": ocr_text[:800]})
             match = re.search(r'\{.*\}', res, re.DOTALL)
             if match:

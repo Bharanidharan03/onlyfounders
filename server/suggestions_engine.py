@@ -8,7 +8,7 @@ from google.genai import types
 class SuggestionEngine:
     def __init__(self):
         # Using the Gemini API key provided by the user
-        self.api_key = os.getenv("GOOGLE_API_KEY", "AIzaSyD1t3Tm5LYJ05O1a6yOxIlKPrN3Z8YKBy4")
+        self.api_key = os.getenv("GOOGLE_API_KEY", "AIzaSyCSMxvCyT8maRizUik4Ia13hu9VFGEsDfs")
         
         # Initialize Google GenAI Client
         try:
@@ -16,9 +16,9 @@ class SuggestionEngine:
                 api_key=self.api_key, 
                 http_options={'api_version': 'v1beta'}
             )
-            # Tiered model strategy: 2.5 Flash (Primary) -> 2.0 Flash -> 1.5 Flash (via proper alias)
+            # Tiered model strategy: Confirmed models from list_models.py
             self.primary_model = "gemini-2.5-flash"
-            self.fallback_models = ["gemini-2.0-flash", "gemini-flash-latest"]
+            self.fallback_models = ["gemini-2.0-flash", "gemini-2.5-pro"]
         except Exception as e:
             print(f"GenAI Initialization Error: {e}")
             self.client = None

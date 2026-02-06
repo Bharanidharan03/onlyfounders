@@ -7,7 +7,7 @@ from google import genai
 class GuidanceEngine:
     def __init__(self):
         # Using the user's Gemini API key
-        self.api_key = "AIzaSyD1t3Tm5LYJ05O1a6yOxIlKPrN3Z8YKBy4"
+        self.api_key = "AIzaSyCSMxvCyT8maRizUik4Ia13hu9VFGEsDfs"
         
         try:
             self.client = genai.Client(
